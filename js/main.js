@@ -1,27 +1,38 @@
+window.addEventListener('load', setGridDrawBox);
+
 let container = document.getElementById('gridDrawBox');
 
-//let gridWidthNumber = 20;
-//let gridHeightNumber = 15;
-//let boxPx = "38px"
+//GRID SIZES AND GRID CLEAR
+let small = document.getElementById('small');
+small.addEventListener('click', function(){changeGrid(80,60,8);});
 
-//let gridWidthNumber = 40;
-//let gridHeightNumber = 30;
-//let boxPx = "18px"
+let medium = document.getElementById('medium');
+medium.addEventListener('click', function(){changeGrid(40,30,18);});
 
-let gridWidthNumber = 80;
-let gridHeightNumber = 60;
-let boxPx = "8px"
+let large = document.getElementById('large');
+large.addEventListener('click', function(){changeGrid(20,15,38)})
 
-//let gridSquareWidthHeight = "10px"
+let clear = document.getElementById('clear');
+clear.addEventListener('click', setGridDrawBox);
 
-//large 35px
-//medium 22px
-//small 10px
+//COLOR SELECTORS
+let drawBlack = document.getElementById('drawBlack');
+drawBlack.addEventListener('click', function(){selectColor('black')});
+
+let drawGray = document.getElementById('drawGray');
+drawGray.addEventListener('click', function(){selectColor('gray')});
+
+let drawRandom = document.getElementById('drawRandom');
+drawRandom.addEventListener('click', function(){selectColor('random')})
+
+let gridWidthNumber = 20;
+let gridHeightNumber = 15;
+let boxPx = "38px";
+
 function changeGrid(num1, num2, px){
     gridWidthNumber = num1;
     gridHeightNumber = num2;
     boxPx = px + "px";
-
     setGridDrawBox();
 }
 function removeGridDrawBox(){
@@ -32,11 +43,7 @@ function removeGridDrawBox(){
 
 function setGridDrawBox(){
     removeGridDrawBox();
-    //window.location.reload(); 
     let GridSquared = gridWidthNumber * gridHeightNumber;
-    //gridSquareWidthHeight = "10px";
-    //boxPx = px + "px";
-
 
     for (i=0; i < GridSquared; i++){
         let div = document.createElement('div');
@@ -48,7 +55,7 @@ function setGridDrawBox(){
     }
 }
 let boxColor;
-let colorChoice = "random";
+let colorChoice = "black";
 
 function selectColor(colorPass){
     colorChoice = colorPass;
@@ -73,11 +80,3 @@ function setBoxColor(color){
         boxColor = "rgb(90, 90, 90)"
     }
 }
-setGridDrawBox();
-//setBoxColor(colorChoice);
-//setBoxColor(random);
-
-
-//container.appendChild(div);
-//let div = document.createElement('div');
-//div.classList.add("gridSquare");

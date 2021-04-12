@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Git Template</title>
+		<title>Etch A Sketch</title>
 
         	<link rel="stylesheet" href="css/main.css" type="text/css">
         	
@@ -9,10 +9,6 @@
 	
 	<body>
 		<div id="container">
-			<div onclick="setGridDrawBox()">clear</div>
-			<div onclick="changeGrid(37, 24, 22)"> large </div>
-			<div onclick="changeGrid(74, 49, 10)"> small </div>
-			<div onclick="selectColor('black')">color black</div>
 			
 			<div id="easOutSide">
 				<div id="easHead">
@@ -28,6 +24,12 @@
 						</div>
 					</div>
 
+					<div id="easFootMiddle">
+						<div class="footButtons" id="clear">Clear</div>
+						<div class="footButtons" id="small"> Small </div>
+						<div class="footButtons" id="medium">Medium</div>
+						<div class="footButtons" id="large"> Large </div>
+					</div>
 
 					<div class="knobOutside">
 						<div class="knobInside">
@@ -35,6 +37,11 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div id="footer">
+				<div class="edgeButtons" id="drawBlack">Draw Black</div>
+				<div class="edgeButtons" id="drawGray">Draw Gray</div>
+				<div class="edgeButtons" id="drawRandom">Draw Random</div>
 			</div>
 			
 		</div>
