@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+}
+
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gridDrawBox{
+    width: 800px;
+    height: 600px;
+    /*background-color: rgb(207, 207, 207);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.gridSquare{
+    /*width: 35px;
+    height: 35px;*/
+    border: 1px solid black;
+    /*background-color: rgb(224, 224, 224);
+    color: rgb(90, 90, 90);*/
+}
+#easOutSide{
+    width: 950px;
+    height: 750px;
+    background-color: rgb(182, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+#easHead{
+    width: 920px;
+    height: 70px;
+    /*background-color: purple;*/
+}
+#easFoot{
+    width: 920px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: purple;*/
+}
+#easInSide{
+    width: 810px;
+    height: 610px;
+    background-color: rgb(207, 207, 207);
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.knobOutside{
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.knobInside{
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    background-color: white;
+    border: 2px dotted black;
+    border-radius: 50%;
+}
+.knobInside2{
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}

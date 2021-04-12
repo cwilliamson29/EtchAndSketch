@@ -8,7 +8,34 @@
 	</head>
 	
 	<body>
+		<div id="container">
+			<div onclick="setGridDrawBox()">clear</div>
+			<div onclick="changeGrid(37, 24, 22)"> large </div>
+			<div onclick="changeGrid(74, 49, 10)"> small </div>
+			<div onclick="selectColor('black')">color black</div>
+			
+			<div id="easOutSide">
+				<div id="easHead"></div>
+				<div id="easInSide">
+					<div id="gridDrawBox"></div>
+				</div>
+				<div id="easFoot">
+					<div class="knobOutside">
+						<div class="knobInside">
+							<div class="knobInside2"></div>
+						</div>
+					</div>
 
+
+					<div class="knobOutside">
+						<div class="knobInside">
+							<div class="knobInside2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
    	</body>
 	
 	<script src="js/main.js"></script>
