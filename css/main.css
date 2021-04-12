@@ -43,6 +43,9 @@ body {
 #easHead{
     width: 920px;
     height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /*background-color: purple;*/
 }
 #easFoot{
